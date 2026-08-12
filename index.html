@@ -38,7 +38,11 @@
   a{color:inherit; text-decoration:none;}
   .wrap{ max-width:1160px; margin:0 auto; padding:0 28px; }
   section{ position:relative; }
+
+  /* Decorative blobs */
   .blob{ position:absolute; border-radius:50%; filter:blur(60px); opacity:.55; pointer-events:none; z-index:0; }
+
+  /* Nav */
   header{
     position:sticky; top:0; z-index:50;
     background:rgba(250,251,250,0.85);
@@ -56,6 +60,8 @@
   }
   .nav-cta:hover{ background:#000; transform:translateY(-1px); }
   .menu-toggle{ display:none; }
+
+  /* Hero */
   .hero{ padding:100px 0 90px; text-align:center; overflow:hidden; }
   .blob-1{ width:420px; height:420px; background:var(--mint); top:-120px; right:-100px; }
   .blob-2{ width:340px; height:340px; background:var(--purple); bottom:-140px; left:-120px; }
@@ -84,10 +90,14 @@
   }
   .hero-strip div{ display:flex; align-items:center; gap:8px; }
   .hero-strip svg{ width:18px; height:18px; color:var(--mint); flex-shrink:0; }
+
+  /* Section headings */
   .eyebrow{ color:var(--mint); font-weight:700; font-size:13px; letter-spacing:.08em; text-transform:uppercase; margin-bottom:12px; }
   .section-head{ text-align:center; max-width:640px; margin:0 auto 56px; }
   .section-head h2{ font-size:clamp(26px,3.4vw,38px); color:var(--navy); font-weight:800; letter-spacing:-0.01em; margin-bottom:14px; }
   .section-head p{ color:var(--muted); font-size:16.5px; }
+
+  /* Problem section */
   .problem{ padding:90px 0; background:var(--card); border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
   .problem-grid{ display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
   .stat-card{
@@ -106,6 +116,8 @@
   .check-item .ic svg{ width:16px; height:16px; }
   .check-item strong{ color:var(--navy); }
   .check-item span{ color:var(--muted); font-size:15px; }
+
+  /* Products */
   .products{ padding:100px 0; }
   .product-grid{ display:grid; grid-template-columns:1fr 1fr; gap:28px; }
   .p-card{
@@ -119,6 +131,8 @@
   .p-icon{ width:56px; height:56px; border-radius:16px; display:flex; align-items:center; justify-content:center; margin-bottom:22px; font-size:26px; }
   .p-card.mint .p-icon{ background:var(--mint-light); }
   .p-card.purple .p-icon{ background:var(--purple-light); }
+  .p-visual{ width:100%; height:230px; border-radius:16px; overflow:hidden; margin-bottom:22px; }
+  .p-visual svg{ width:100%; height:100%; display:block; }
   .p-card h3{ font-size:23px; color:var(--navy); font-weight:700; margin-bottom:12px; }
   .p-card p.desc{ color:var(--muted); font-size:15.5px; margin-bottom:22px; }
   .p-price{ font-size:26px; font-weight:800; color:var(--navy); font-family:'Poppins',sans-serif; margin-bottom:20px; }
@@ -126,9 +140,12 @@
   .pill-row{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:24px; }
   .pill{ font-size:12.5px; font-weight:600; color:var(--ink); background:var(--bg); border:1px solid var(--border); padding:6px 12px; border-radius:999px; }
   .p-card .btn{ width:100%; justify-content:center; }
+
   .display-note{
     margin-top:28px; text-align:center; background:var(--purple-light); border-radius:16px; padding:22px 26px; color:#5D3AA6; font-size:14.5px; font-weight:500;
   }
+
+  /* Science */
   .science{ padding:100px 0; background:var(--navy); color:#fff; position:relative; overflow:hidden; }
   .science .blob-1{ background:var(--purple); width:400px; height:400px; top:-100px; right:-100px; opacity:.25; }
   .science .blob-2{ background:var(--mint); width:340px; height:340px; bottom:-120px; left:-80px; opacity:.2; }
@@ -141,12 +158,16 @@
   .sci-card p{ color:#B7BFC8; font-size:15px; }
   .ingredient-row{ display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:48px; position:relative; z-index:1; }
   .ing-pill{ background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.14); padding:10px 18px; border-radius:999px; font-size:13.5px; font-weight:600; color:#E6EAEE; }
+
+  /* Where to find */
   .where{ padding:100px 0; }
   .where-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
   .w-card{ background:var(--card); border:1px solid var(--border); border-radius:18px; padding:32px 26px; text-align:center; }
   .w-card .ic{ width:50px; height:50px; border-radius:14px; background:var(--mint-light); color:var(--mint); display:flex; align-items:center; justify-content:center; margin:0 auto 18px; }
   .w-card h3{ font-size:17px; color:var(--navy); margin-bottom:8px; font-weight:700; }
   .w-card p{ color:var(--muted); font-size:14.5px; }
+
+  /* FAQ */
   .faq{ padding:100px 0; background:var(--card); border-top:1px solid var(--border); }
   .faq-list{ max-width:760px; margin:0 auto; }
   .faq-item{ border-bottom:1px solid var(--border); padding:24px 0; }
@@ -155,11 +176,15 @@
   .faq-item summary .plus{ font-size:22px; color:var(--mint); transition:.2s; flex-shrink:0; margin-left:16px; }
   .faq-item[open] summary .plus{ transform:rotate(45deg); }
   .faq-item p{ color:var(--muted); margin-top:14px; font-size:15px; }
+
+  /* CTA */
   .cta{ padding:110px 0; text-align:center; position:relative; overflow:hidden; }
   .cta .blob{ width:500px; height:500px; background:var(--mint); top:-200px; left:50%; transform:translateX(-50%); opacity:.3; }
   .cta h2{ font-size:clamp(28px,4vw,42px); color:var(--navy); font-weight:800; margin-bottom:16px; position:relative; z-index:1; }
   .cta p{ color:var(--muted); font-size:17px; max-width:520px; margin:0 auto 34px; position:relative; z-index:1; }
   .cta .btn{ position:relative; z-index:1; }
+
+  /* Footer */
   footer{ background:var(--navy); color:#B7BFC8; padding:56px 0 30px; }
   .foot-grid{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:32px; padding-bottom:36px; border-bottom:1px solid rgba(255,255,255,0.1); }
   .foot-brand .brand{ color:#fff; margin-bottom:10px; }
@@ -168,12 +193,15 @@
   .foot-col a{ display:block; color:#98A2AD; font-size:14px; margin-bottom:10px; }
   .foot-col a:hover{ color:#fff; }
   .foot-bottom{ padding-top:26px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; font-size:13px; color:#7C8791; }
+
+  /* WhatsApp floating button */
   .float-wa{
     position:fixed; bottom:26px; right:26px; z-index:60; background:#25D366; color:#fff; width:60px; height:60px; border-radius:50%;
     display:flex; align-items:center; justify-content:center; box-shadow:0 12px 28px -8px rgba(37,211,102,0.6); transition:.2s;
   }
   .float-wa:hover{ transform:scale(1.08); }
   .float-wa svg{ width:28px; height:28px; }
+
   @media(max-width:860px){
     .nav-links{ display:none; }
     .problem-grid, .sci-grid, .product-grid{ grid-template-columns:1fr; }
@@ -253,8 +281,42 @@
     </div>
     <div class="product-grid">
       <div class="p-card mint">
+        <div class="p-visual">
+          <svg viewBox="0 0 300 260" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="260" fill="#DCF3EC"/>
+            <circle cx="118" cy="34" r="9" fill="#AEE3D3"/>
+            <circle cx="140" cy="30" r="9" fill="#AEE3D3"/>
+            <circle cx="162" cy="36" r="9" fill="#B7A8E8"/>
+            <g opacity="0.55">
+              <circle cx="150" cy="72" r="3" fill="#C9A98A"/>
+              <circle cx="160" cy="66" r="2.4" fill="#8FBF9A"/>
+              <circle cx="141" cy="64" r="2" fill="#C9A98A"/>
+              <circle cx="156" cy="80" r="2.6" fill="#C9A98A"/>
+              <circle cx="132" cy="76" r="2" fill="#8FBF9A"/>
+              <circle cx="168" cy="78" r="2" fill="#C9A98A"/>
+            </g>
+            <g>
+              <path d="M118 96 h64 v14 l-8 6 v118 a10 10 0 0 1 -10 10 h-28 a10 10 0 0 1 -10 -10 v-118 l-8 -6 z" fill="#B4A7E0"/>
+              <path d="M110 168 h80 v56 a10 10 0 0 1 -10 10 h-60 a10 10 0 0 1 -10 -10 z" fill="#CDEEE3"/>
+              <path d="M110 168 q40 10 80 0" fill="none" stroke="#B4A7E0" stroke-width="1" opacity="0"/>
+              <g stroke="#9C8ED0" stroke-width="1.4" opacity="0.6">
+                <line x1="122" y1="100" x2="122" y2="112"/>
+                <line x1="130" y1="98" x2="130" y2="112"/>
+                <line x1="138" y1="98" x2="138" y2="112"/>
+                <line x1="146" y1="98" x2="146" y2="112"/>
+                <line x1="154" y1="98" x2="154" y2="112"/>
+                <line x1="162" y1="98" x2="162" y2="112"/>
+                <line x1="170" y1="100" x2="170" y2="112"/>
+              </g>
+              <text x="150" y="140" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="22" fill="#1B2430">Calmo</text>
+              <text x="150" y="163" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="10.5" letter-spacing="0.5" fill="#1B2430">FOCUS &amp; ENERGY</text>
+              <text x="150" y="176" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="600" font-size="8.5" letter-spacing="0.5" fill="#2B3542">DRINK MIX</text>
+              <circle cx="150" cy="205" r="16" fill="#F3EDE0"/>
+              <polyline points="136,205 143,205 147,196 152,214 157,199 161,205 164,205" fill="none" stroke="#1B2430" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+          </svg>
+        </div>
         <span class="p-tag">Focus & Energy</span>
-        <div class="p-icon">🌿</div>
         <h3>Drink Mix — Foco sostenido</h3>
         <p class="desc">Mezcla soluble en stick, 0g de azúcar, con L-Teanina y Matcha Cítrico. Alerta mental sostenida, sin temblores ni bajones. Se diluye en agua en segundos.</p>
         <div class="pill-row">
@@ -262,12 +324,48 @@
           <span class="pill">Matcha Cítrico</span>
           <span class="pill">0g azúcar</span>
         </div>
-        <div class="p-price">$1.99 USD <span>/ stick individual</span></div>
+        <div class="p-price">$39 MXN <span>/ stick individual</span></div>
         <a class="btn btn-primary" href="https://wa.me/523316005011?text=%C2%A1Hola!%20Quiero%20pedir%20Calmo%20Focus%20%26%20Energy." target="_blank" rel="noopener">Pedir por WhatsApp</a>
       </div>
       <div class="p-card purple">
+        <div class="p-visual">
+          <svg viewBox="0 0 300 260" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="260" fill="#FBE1EA"/>
+            <g>
+              <circle cx="205" cy="38" r="15" fill="#5E7A52"/>
+              <circle cx="228" cy="55" r="13" fill="#3B2E4A"/>
+              <circle cx="182" cy="58" r="12" fill="#3B2E4A"/>
+              <circle cx="200" cy="72" r="11" fill="#5E7A52"/>
+              <circle cx="222" cy="78" r="10" fill="#5E7A52"/>
+            </g>
+            <g transform="translate(150,150) rotate(-8)">
+              <path d="M-58 -70 h116 l10 14 v128 a12 12 0 0 1 -12 12 h-112 a12 12 0 0 1 -12 -12 v-128 z" fill="#B4A7E0"/>
+              <path d="M-60 6 h120 v58 a12 12 0 0 1 -12 12 h-96 a12 12 0 0 1 -12 -12 z" fill="#BFE4D6"/>
+              <g stroke="#9C8ED0" stroke-width="1.6" opacity="0.55">
+                <line x1="-50" y1="-66" x2="-50" y2="-52"/>
+                <line x1="-36" y1="-68" x2="-36" y2="-52"/>
+                <line x1="-22" y1="-68" x2="-22" y2="-52"/>
+                <line x1="-8" y1="-68" x2="-8" y2="-52"/>
+                <line x1="6" y1="-68" x2="6" y2="-52"/>
+                <line x1="20" y1="-68" x2="20" y2="-52"/>
+                <line x1="34" y1="-68" x2="34" y2="-52"/>
+                <line x1="48" y1="-66" x2="48" y2="-52"/>
+              </g>
+              <text x="0" y="-16" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="26" fill="#1B2430">Calmo</text>
+              <g transform="translate(0,18)">
+                <ellipse cx="0" cy="0" rx="17" ry="11" fill="#F3EDE0"/>
+                <ellipse cx="-11" cy="3" rx="9" ry="7" fill="#F3EDE0"/>
+                <ellipse cx="11" cy="3" rx="9" ry="7" fill="#F3EDE0"/>
+                <polyline points="-6,-3 0,-3 -3,7 6,7 -1,17" fill="none" stroke="#1B2430" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <text x="0" y="52" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="13" letter-spacing="0.3" fill="#1B2430">SOUR GROUNDERS</text>
+              <text x="0" y="68" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="600" font-size="8" letter-spacing="0.3" fill="#2B3542">GROUNDING &amp; RESCATE</text>
+              <text x="-40" y="88" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="600" font-size="7" fill="#3A4552">4 GOMITAS</text>
+              <text x="38" y="94" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="600" font-size="7" fill="#3A4552">SIN AZÚCAR</text>
+            </g>
+          </svg>
+        </div>
         <span class="p-tag">Sour Grounders</span>
-        <div class="p-icon">🍬</div>
         <h3>Gomitas de choque sensorial</h3>
         <p class="desc">Sachet con 4 gomitas ácidas sin azúcar. Su acidez extrema activa el nervio trigémino y rompe el bucle de pánico en segundos, con GABA y Magnesio.</p>
         <div class="pill-row">
@@ -275,7 +373,7 @@
           <span class="pill">Magnesio</span>
           <span class="pill">Sin azúcar</span>
         </div>
-        <div class="p-price">$2.49 USD <span>/ sachet de 4</span></div>
+        <div class="p-price">$49 MXN <span>/ sachet de 4</span></div>
         <a class="btn btn-primary" href="https://wa.me/523316005011?text=%C2%A1Hola!%20Quiero%20pedir%20Calmo%20Sour%20Grounders." target="_blank" rel="noopener">Pedir por WhatsApp</a>
       </div>
     </div>
