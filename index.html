@@ -131,9 +131,11 @@
   .p-icon{ width:56px; height:56px; border-radius:16px; display:flex; align-items:center; justify-content:center; margin-bottom:22px; font-size:26px; }
   .p-card.mint .p-icon{ background:var(--mint-light); }
   .p-card.purple .p-icon{ background:var(--purple-light); }
-  .p-visual{ width:100%; height:230px; border-radius:16px; overflow:hidden; margin-bottom:22px; }
+  .p-visual{ width:100%; height:320px; border-radius:16px; overflow:hidden; margin-bottom:22px; display:flex; align-items:center; justify-content:center; }
   .p-visual svg{ width:100%; height:100%; display:block; }
-  .p-visual img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .p-visual img{ width:100%; height:100%; object-fit:contain; display:block; }
+  .p-card.mint .p-visual{ background:#DCF3EC; }
+  .p-card.purple .p-visual{ background:#FBE1EA; }
   .p-card h3{ font-size:23px; color:var(--navy); font-weight:700; margin-bottom:12px; }
   .p-card p.desc{ color:var(--muted); font-size:15.5px; margin-bottom:22px; }
   .p-price{ font-size:26px; font-weight:800; color:var(--navy); font-family:'Poppins',sans-serif; margin-bottom:20px; }
